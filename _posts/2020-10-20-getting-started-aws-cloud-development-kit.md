@@ -17,7 +17,7 @@ Start by launching a Cloud9 environment with an identifiable name and optional d
 
 I like to create a no-ingress EC2 instance for simplified environment access via System Manager since my public egress IP continually changes. Depending on your requirements, this may introduce some additional security considerations for your development bastion host.
 
-https://docs.aws.amazon.com/systems-manager/latest/userguide/security-best-practices.html
+[https://docs.aws.amazon.com/systems-manager/latest/userguide/security-best-practices.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/security-best-practices.html)
 
 ![3-configuresettings](/images/2020/10/3-configuresettings.png)
 
@@ -28,7 +28,7 @@ I pick Amazon Linux 2 as my operating system of choice.  This helps with a serve
 Now you can just open a terminal window in a specific lambda folder to quickly add compatible libraries.
 
 ```
-python3 -m pip install --target=./ requests
+$ python3 -m pip install --target=./ requests
 ```
 
 Cloud9 deployments can be secured with VPC Endpoints for EC2 and SSM or, better yet, add a public/private subnet with NAT Gateway for your egress in production environments too.
@@ -52,7 +52,7 @@ The default installation only has 10 GB of storage allocated, not leaving enough
 During the initial setup, the EC2 volume can fill up, requiring the temporary directory to be emptied to free up space.
 
 ```
-sudo rm -R /tmp/*
+$ sudo rm -R /tmp/*
 ```
 
 These commands will finish expanding the disk space available for the operating system usage.

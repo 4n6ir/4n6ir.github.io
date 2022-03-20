@@ -2,9 +2,7 @@
 <p>by James Habben & John Lukach</p>
 
 <ul>
-  <li>
-    {% for post in site.posts %}
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    {% endfor %}
-  </li>
+{% for post in site.posts %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
 </ul>
