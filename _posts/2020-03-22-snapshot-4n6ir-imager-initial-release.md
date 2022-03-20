@@ -25,10 +25,6 @@ Amazon Web Services (AWS) released direct API access to Elastic Block Storage (E
 
 Snapshot 4n6ir Imager python script initial release for converting an Amazon EBS Snapshot to a DD image for analysis. Special thanks to those who followed along with my previous posts by testing and providing feedback! Hopefully, others find my weekend project helpful in addressing the AWS imaging hurdles.
 
-Happy Coding,
-
-John Lukach
-
 ```
 Snapshot 4n6ir Imager v0.1.7
 
