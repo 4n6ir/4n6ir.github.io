@@ -3,6 +3,8 @@
 
 <ul>
   {% for post in site.posts %}
-    <li>{{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})</li>
+    <li>
+      <a href="{{ post.url }}">{{ page.date | date: "%B %-d %Y" }} {{ post.title }}</a>
+    </li>
   {% endfor %}
 </ul>
