@@ -85,7 +85,7 @@ $ sudo reboot now
 
 AWS Cloud Development Kit (CDK) is continuously being improved!  I want to stay on the current version, where I regularly use these commands when I wake up the Cloud9 system or stand up new Python environments.
 
-https://docs.aws.amazon.com/cloud9/latest/user-guide/sample-cdk.html
+[https://docs.aws.amazon.com/cloud9/latest/user-guide/sample-cdk.html](https://docs.aws.amazon.com/cloud9/latest/user-guide/sample-cdk.html)
 
 ```
 $ cdk version
@@ -104,7 +104,7 @@ $ npm install -g aws-cdk
 
 Here are the commands to use the modern bootstrap for your CDK deployments from your Cloud9 instance.
 
-https://docs.aws.amazon.com/cdk/latest/guide/bootstrapping.html
+[https://docs.aws.amazon.com/cdk/latest/guide/bootstrapping.html](https://docs.aws.amazon.com/cdk/latest/guide/bootstrapping.html)
 
 ```
 $ export CDK_NEW_BOOTSTRAP=1
@@ -126,7 +126,7 @@ $ ssh-add ~/.ssh/id_rsa
 
 The CDK Workshop provides a detailed tutorial for getting started! Like the rest of this post, I wanted to provide my quick start notes to create an empty CDK project.
 
-https://cdkworkshop.com/30-python.html
+[https://cdkworkshop.com/30-python.html](https://cdkworkshop.com/30-python.html)
 
 ```
 $ mkdir new-app-cdk && cd new-app-cdk
