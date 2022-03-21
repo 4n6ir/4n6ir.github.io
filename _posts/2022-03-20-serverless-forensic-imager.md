@@ -52,7 +52,7 @@ These data events are still not logged by default; thus wise to leave the SCP in
 
 ##### SNAP4N6 UPDATES
 
-First thing, first, I renamed --Snapshot 4n6ir Imager-- to **Snap4n6**.
+First thing, first, I renamed **Snapshot 4n6ir Imager** to **Snap4n6**.
 
 Next, I switched the script to a serverless solution for less maintenance.
 
