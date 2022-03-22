@@ -50,6 +50,8 @@ These data events are still not logged by default; thus wise to leave the SCP in
 
 ![Cloud Trail Data Event EBS Direct API](/images/2022/03/dataevent-ebsdirectapi-cloudtrail.jpg)
 
+I missed that they added SHA256 as the checksum for the snapshot blocks collected with the EBS Direct API in the Boto3 SDK at some point.
+
 ##### SNAP4N6 UPDATES
 
 First thing, first, I renamed **Snapshot 4n6ir Imager** to **Snap4n6**.
@@ -61,3 +63,5 @@ Next, I switched the script to a serverless solution for less maintenance.
 Finally, I created a Python package for rebuilding the forensic image.
 
 [https://pypi.org/project/snap4n6](https://pypi.org/project/snap4n6)
+
+![Snap4n6 Step-Function](/images/2022/03/snap4n6-step-function.jpg)
