@@ -13,16 +13,16 @@ I did not see a Python example using Amazon Web Services (AWS) Cloud Development
 
 ```python
 provider = _iam.OpenIdConnectProvider(
-	self, 'provider',
-    url = 'https://token.actions.githubusercontent.com',
-    client_ids = [
-    	'sts.amazonaws.com'
-    ]
+  self, 'provider',
+  url = 'https://token.actions.githubusercontent.com',
+  client_ids = [
+    'sts.amazonaws.com'
+  ]
 )
 
 role = _iam.Role(
-	self, 'role',
-	assumed_by = _iam.WebIdentityPrincipal(
+  self, 'role',
+  assumed_by = _iam.WebIdentityPrincipal(
     provider.open_id_connect_provider_arn
   ).with_conditions(
     {
