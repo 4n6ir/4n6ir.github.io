@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GitHub OpenID with Python for AWS CDK"
+title: "GitHub OpenID with AWS CDK"
 author: "John Lukach"
 tags: AWS CDK GitHub OpenID
 ---
@@ -22,15 +22,15 @@ provider = _iam.OpenIdConnectProvider(
 
 role = _iam.Role(
 	self, 'role',
-		assumed_by = _iam.WebIdentityPrincipal(
-        	provider.open_id_connect_provider_arn
-        ).with_conditions(
-        {
-            'StringLike': {
-                'token.actions.githubusercontent.com:sub': 'repo:4n6ir/matchmeta.info:*'
-            }
-        }
-    )
+	assumed_by = _iam.WebIdentityPrincipal(
+    provider.open_id_connect_provider_arn
+  ).with_conditions(
+    {
+      'StringLike': {
+        'token.actions.githubusercontent.com:sub': 'repo:organization/repository:*'
+      }
+    }
+  )
 )
 ```
 
