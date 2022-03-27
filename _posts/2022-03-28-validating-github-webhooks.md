@@ -23,7 +23,7 @@ Parse the SHA256 verification hash from the Lambda Function that received the Gi
 webhook = re.sub(r'^sha256=', '', event['headers']['X-Hub-Signature-256'])
 ```
 
-Calculate the Hash-Based Message Authentication Code (HMAC) using the GitHub Webhook Secret and Event Body in a UTF-8 format to generate a SHA256 hash value.
+Calculate the Hash-Based Message Authentication Code (HMAC) using the GitHub Webhook Secret and Event Body in a UTF-8 format to generate a SHA256 hash.
 
 ```python
 digest = hmac.new(
@@ -33,7 +33,7 @@ digest = hmac.new(
 )
 ```
 
-Two matching values indicated a successful GitHub Webhook authentication.
+Two matching values indicate a successful GitHub Webhook authentication.
 
 ```python
 if webhook != digest.hexdigest():
