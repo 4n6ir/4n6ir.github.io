@@ -5,7 +5,7 @@ author: "John Lukach"
 tags: GitHub Python Webhooks
 ---
 
-I added a GitHub Webhook that invalidates a CloudFront Distribution with a published Release that I needed to secure.
+I added a GitHub Webhook that invalidates the CloudFront Distribution using a Tag increment with the published Release that I needed to secure.
 
 [https://docs.github.com/en/developers/webhooks-and-events/webhooks/securing-your-webhooks](https://docs.github.com/en/developers/webhooks-and-events/webhooks/securing-your-webhooks)
 
