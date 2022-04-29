@@ -19,7 +19,7 @@ aws organizations register-delegated-administrator \
 
 Granting privileged access to the organization endpoint through delegated administration is better than punching IAM permissions but could still be abused for malicious intent. Another risk is having your contact information misrepresented so AWS Security cannot get ahold of you, extending the time to detection. An SCP to prevent this risk is a foundational building block that should be a default configuration.
 
-https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-example-scps.html
+[https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-example-scps.html](https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-example-scps.html)
 
 There is an entire list of services with Delegated Administration capabilities. 
 
@@ -41,7 +41,7 @@ There is an entire list of services with Delegated Administration capabilities.
  - AWS Systems Manager
  - Amazon VPC IP Address Manager (IPAM)
 
-https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.html
+[https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.html](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.html)
 
 How do we identify privileged AWS accounts? In the management (root) account or an existing delegated administrator account for the organization, run the following AWS CLI command.
 
