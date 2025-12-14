@@ -1,0 +1,80 @@
+---
+layout: home
+paginate: true
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+
+        {% if site.logo %}
+          <a href="https://4n6ir.com"><img src="{{site.logo | relative_url}}" alt="Ugly Green Logo" /></a>
+        {% endif %}
+
+        <h2>{{ site.title | default: site.github.repository_name }}</h2>
+
+        <p class="view"><a href="https://github.com/4n6ir">GitHub Organization</a></p>
+        
+      </header>
+      <section>
+
+        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+
+        {% for post in paginator.posts %}
+          <p class="view">
+            <a href="{{ post.url }}">{{ post.title }}</a><br />
+             by {{ post.author | default: site.author }} on {{ post.date | date: "%B %d, %Y" }}
+          </p>
+        {% endfor %}
+
+        {% if paginator.total_pages > 1 %}
+        <div class="pagination">
+          {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+          {% else %}
+            <span>&laquo; Prev</span>
+          {% endif %}
+        
+          {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+              <em>{{ page }}</em>
+            {% elsif page == 1 %}
+              <a href="/">{{ page }}</a>
+            {% else %}
+              <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+            {% endif %}
+          {% endfor %}
+        
+          {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+          {% else %}
+            <span>Next &raquo;</span>
+          {% endif %}
+        </div>
+        {% endif %}
+
+      </section>
+      <footer>
+
+        <p>&copy; 2015 - 2018 4n6ir.com</p>
+
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+title: 4n6ir.com
+description: Forensic Incident Response
+logo: /images/uglygreen.png
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+paginate: 8
+paginate_path: ./page:num/
+url: https://4n6ir.com
