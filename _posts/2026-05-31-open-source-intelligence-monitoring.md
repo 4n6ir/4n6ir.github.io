@@ -2,7 +2,7 @@
 layout: post
 title: "Open Source Intelligence (OSINT) Monitoring"
 author: "John Lukach"
-tags: dns, domain, osint
+tags: dns domain osint
 ---
 
 [![landing page](/images/2026/05/31/1-landing-page.png)](/images/2026/05/31/1-landing-page.png)
