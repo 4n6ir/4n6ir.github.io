@@ -89,7 +89,7 @@ Each account has a **threshold** value. During search, every enabled permutation
 
 This is why some permutations may appear disabled after processing, even if you initially left them on.
 
-## Quick Start Checklist
+## Quick start checklist
 
 Use this checklist to get running fast:
 
